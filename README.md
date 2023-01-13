@@ -65,7 +65,7 @@ let dog = {
 }
 ```
 
-When we initialize an object with the new keyword, they new keyword will generate an empty constructor, unless we write it again to override it.<br />
+When we initialize an object with the `new` keyword, the `new` keyword will generate an empty constructor, unless we write it again to override it.<br />
 Once the object instance is created, the prototype will point itself to the empty constructor.
 
 Do take note that function expression doesn't have a constructor, only function declaration has.
