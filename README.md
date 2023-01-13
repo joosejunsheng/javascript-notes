@@ -27,7 +27,7 @@ s1.toUpperCase(); // returns "I AM A STRING"
 s2.toUpperCase(); // returns "I AM A STRING"
 ```
 
-If so, how is it possible for s2 to use method like .toUpperCase()?
+#### If so, how is it possible for s2 to use method like .toUpperCase()?<br />
 s2 will still has the access to all String object methods because Javascript will temporarily cast literals to String object in order to run the method.
 
 Each object has a "private" property which holds a link to another object called its prototype. And .toUpperCase() is a method from String.prototype.
@@ -65,7 +65,7 @@ let dog = {
 }
 ```
 
-When we initialize an object with the new keyword, they new keyword will generate an empty constructor, unless we write it again to override it.
+When we initialize an object with the new keyword, they new keyword will generate an empty constructor, unless we write it again to override it.<br />
 Once the object instance is created, the prototype will point itself to the empty constructor.
 
 Do take note that function expression doesn't have a constructor, only function declaration has.
@@ -111,7 +111,7 @@ arr.customMethod(); // returns "AA"
 ```
 
 ## Misc
-1) Why do we get undefined in the next line after we console.log() our value in the console.
+1) Why do we get undefined in the next line after we console.log() our value in the console?<br />
 The reason of this is that because console.log() does not return anything. Same goes to declaration of variables.
 
 ```mjs
